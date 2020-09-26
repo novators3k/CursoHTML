@@ -1,7 +1,15 @@
+/* Pesquisar sobre código para fazer novo html funcionar em todos os navegadores*/
+
+/* Formatação imagens*/
 
 body {
     background-color: white;
     color: rgba(0, 0, 0,1);
+}
+
+div#interface {
+    width: 800px;
+    
 }
 
 p {
@@ -35,4 +43,57 @@ figure.foto-legenda figcaption {
 
 figure.foto-legenda:hover figcaption {
     opacity: 1;    
-} 
+}
+
+/* Formatação do Menu */
+
+nav#menu {
+    display: block;
+}
+
+nav#menu ul {
+    position: absolute;
+    list-style: none;
+    text-transform: uppercase;
+    top: -20px;
+    left: 300px;
+}
+
+nav#menu li {
+    display: inline-block;
+    background-color: #dbddda;
+    padding: 10px;
+    margin: 2px;
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    -ms-transition: background-color 1s;
+    transition: background-color 1s; 
+}    
+ 
+nav#menu li:hover {
+    background-color: #606060;    
+}
+
+/* esconde uma tag*/
+nav#menu h1 {
+    display: none;
+}
+
+/* altera o layout do link*/
+nav#menu a {
+    color: black;
+    text-decoration: none;    
+}
+
+/* altera o layout qd o mouse esta sob o link*/
+nav#menu a:hover { 
+    color: white;
+    text-decoration: underline;
+}
+
+
+
+
+
+
