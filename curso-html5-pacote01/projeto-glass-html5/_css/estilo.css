@@ -25,7 +25,12 @@ div#interface {
 
 p {
     text-align: justify;
-    text-indent: 50px;    
+    text-indent: 50px;
+    padding: 0px 38px 0px 38px;    
+}
+
+aside#lateral .asideLateral {
+    padding: 0px 3px 0px 3px;
 }
 
 a {
@@ -41,7 +46,8 @@ header#cabecalho {
     position: relative;
     border-bottom: 1px #606060 solid;
     height: 150px;
-    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;
+    padding: 0px 0px 0px 15px;
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 13px 80px;
 }
 
 header#cabecalho h1 {
@@ -156,8 +162,8 @@ article#noticia-principal h2 {
     font-size: 13px;
     color: #606060;
     background-color: #dddddd;
-    padding: 5px 0px 5px 10px;
-    margin: 10px 0px 10px 0px;
+    padding: 7px 0px 7px 10px;
+    margin: 0px 38px 10px 38px;
 }
 
 header#cabecalho-artigo h1 {
@@ -166,6 +172,7 @@ header#cabecalho-artigo h1 {
     color: #606060;
     margin-bottom: 0px;
     margin-top: 0px;
+    padding: 0px 0px 0px 28px;
 }
 
 header#cabecalho-artigo h2 {
@@ -173,11 +180,13 @@ header#cabecalho-artigo h2 {
     color: #cecece;
     background-color: #ffffff;
     margin: 0px;
+    padding: 0px 38px 0px 28px;
 }
 
 header#cabecalho-artigo h3 {
     font-size: 12px;
     color: #606060;
+    padding: 0px 38px 10px 28px;
 }
 
 .direita {
@@ -205,6 +214,7 @@ table#tabelaspec td.ce {
     background-color: #606060;
     vertical-align: top;
     font-weight: bold;
+    text-align: right;    
 }
 
 table#tabelaspec td.cd {
