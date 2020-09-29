@@ -1,0 +1,13 @@
+ul#album-fotos {
+    width: 700px;
+    margin: 0px;
+    padding: 50px;
+    overflow: hidden;
+    list-style: none;
+}
+
+ul#album-fotos li {
+    float: left;
+    width: 200px;
+    height: 200px;
+}
