@@ -8,10 +8,16 @@
     <title>Tudo sobre Google Glass</title>
     <link rel="stylesheet" type="text/css" href="./_css/estilo.css">
     <link rel="stylesheet" type="text/css" href="./_css/form.css">
+    <script language="javascript" src="./_javascript/funcoes.js"></script>
+    <script>
+        function calc_total() {
+            var qtd = parseInt(document.getElementById('cQtd').value);
+            tot = qtd * 1500;
+            document.getElementById('cTot').value = tot;
+        }        
+    </script>
 
 </head>
-
-<script language="javascript" src="./_javascript/funcoes.js"></script>
 
 <body>
 
@@ -57,7 +63,7 @@
                     </hgroup>
                 </header>
 
-                <form method="POST" id="fContato" action="mailto:contato@cursoemvideo.com">
+                <form method="POST" id="fContato" action="mailto:contato@cursoemvideo.com" oninput="calc_total();">
 
                     <fieldset id="usuario">
                         
@@ -65,7 +71,7 @@
                         
                         <p><label for="cNome">Nome: </label><input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo"></p>
                         <p><label for="cSenha">Senha: </label><input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8 Dígitos"></p>
-                        <p><label for="cMail">E-mail: </label><input type="email" name="tMail" id="cMail" size="25" maxlength="40" placeholder="E-mail"></p>
+                        <p><label for="cMail">E-mail: </label><input type="email" name="tMail" id="cMail" size="20" maxlength="40" placeholder="E-mail"></p>
                         
                         <fieldset id="sexo">                        
                             <legend>Sexo:</legend>
@@ -113,22 +119,30 @@
                         <legend>Mensagem do Usuário</legend>
                         
                         <p><label for="cUrg">Grau de Urgência: </label>Min<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2">Máx</p>
-                        <p><label for="cMsg">Mensagem: </label><textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Deixei aqui sua mensagem."></textarea></p>
+                        <p><label for="cMsg">Mensagem:                            
+                        </label><textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Deixei aqui sua mensagem."></textarea></p>
 
                     </fieldset>
 
                     <fieldset id="pedido">
                         <legend>Quero um Google Glass</legend>
 
-                        Gostaria de adquirir um Google Glass quando disponível
-                        Cor:
-                        Quantidade:
-                        Preço Total: R$
+                        <p><input type="checkbox" name="tPed" id="cPed" checked>
+                           <label for="cPed">Gostaria de adquirir um Google Glass quando disponível</label></p>
+                        <p><label for="cCor">Cor:</label>
+                            <input type="color" name="tCor" id="cCor" value="#0000FF">
+                        </p>
+                        <p><label for="cQtd">Quantidade:</label>
+                        <input type="number" name="cQtd" id="cQtd" min="0" max="5" value="0">
+                        </p>
+                        <p><label for="cTot">Preço Total: R$</label>
+                            <input type="text" name="tTot" id="cTot" placeholder="Total a Pagar" readonly>
+                        </p>
                         
                     </fieldset>
 
 
-                    [BOTÃO ENVIAR]
+                    <input type="image" name="tEnviar" src="./_imagens/botao-enviar.png">
 
                 </form>
             </article>
